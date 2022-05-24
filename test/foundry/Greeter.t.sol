@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import {Greeter} from "../Greeter.sol";
+import {Greeter} from "../../contracts/Greeter.sol";
 import {TestHelpers} from "./TestHelpers.sol";
 
 abstract contract TestParameters {
