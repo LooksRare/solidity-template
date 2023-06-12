@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import {Test} from "../../lib/forge-std/src/Test.sol";
+import {AssertionHelpers} from "./AssertionHelpers.sol";
 
-abstract contract TestHelpers is Test {
+abstract contract TestHelpers is AssertionHelpers {
     address public user1 = address(11);
     address public user2 = address(12);
     address public user3 = address(13);
