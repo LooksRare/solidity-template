@@ -10,3 +10,8 @@ typechain
 cache
 artifacts
 abis/
+
+# Test coverage files
+lcov-filtered.info
+lcov.info
+out/
