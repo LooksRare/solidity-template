@@ -67,6 +67,7 @@
     "typescript": "^4.5.2"
   },
   "dependencies": {
+    "@chainlink/contracts": "^0.6.1",
     "@looksrare/contracts-libs": "^3.1.0"
   }
 }
