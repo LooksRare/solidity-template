@@ -67,6 +67,6 @@
   },
   "dependencies": {
     "@chainlink/contracts": "^0.6.1",
-    "@looksrare/contracts-libs": "^3.1.0"
+    "@looksrare/contracts-libs": "^3.4.0"
   }
 }
