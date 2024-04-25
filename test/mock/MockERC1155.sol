@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import {ERC1155} from "solmate/src/tokens/ERC1155.sol";
+import {ERC1155} from "@openzeppelin/contracts/token/ERC1155/ERC1155.sol";
 
 // LooksRare unopinionated libraries
 import {IERC2981} from "@looksrare/contracts-libs/contracts/interfaces/generic/IERC2981.sol";
 
-contract MockERC1155 is ERC1155 {
+contract MockERC1155 is ERC1155("https://example.com/") {
     function batchMint(address to, uint256[] memory tokenIds, uint256[] memory amounts) public {
-        _batchMint(to, tokenIds, amounts, "");
+        _mintBatch(to, tokenIds, amounts, "");
     }
 
     function mint(address to, uint256 tokenId, uint256 amount) public {
