@@ -15,3 +15,7 @@ abis/
 lcov-filtered.info
 lcov.info
 out/
+
+.gas-snapshot
+
+broadcast/
