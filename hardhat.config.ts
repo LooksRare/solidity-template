@@ -19,7 +19,7 @@ const config: HardhatUserConfig = {
   networks: {
     hardhat: {
       allowUnlimitedContractSize: false,
-      hardfork: "paris",
+      hardfork: "shanghai",
       mining: {
         auto: true,
         interval: 50000,
