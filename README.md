@@ -2,6 +2,24 @@
 
 This is a template for GitHub repos with Solidity smart contracts using Forge and Hardhat. This template is used by the LooksRare team for Solidity-based repos. Feel free to use or get inspired to build your own templates!
 
+## Getting Started
+
+Set an dotenv file with:
+
+```
+FOUNDRY_INVARIANT_FAIL_ON_REVERT=true
+```
+
+then
+
+```
+yarn install --ignore-scripts
+forge install foundry-rs/forge-std
+forge install dapphub/ds-test
+forge install gelatodigital/vrf-contracts
+FOUNDRY_PROFILE=local forge test
+```
+
 ## About this repo
 
 ### Structure
