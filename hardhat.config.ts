@@ -19,7 +19,7 @@ const config: HardhatUserConfig = {
   networks: {
     hardhat: {
       allowUnlimitedContractSize: false,
-      hardfork: "berlin", // Berlin is used (temporarily) to avoid issues with coverage
+      hardfork: "paris",
       mining: {
         auto: true,
         interval: 50000,
@@ -33,8 +33,8 @@ const config: HardhatUserConfig = {
   solidity: {
     compilers: [
       {
-        version: "0.8.23",
-        settings: { optimizer: { enabled: true, runs: 888888 } },
+        version: "0.8.24",
+        settings: { viaIR: true, optimizer: { enabled: true, runs: 888888 } },
       },
     ],
   },
@@ -50,7 +50,7 @@ const config: HardhatUserConfig = {
     clear: true,
     flat: true,
     pretty: false,
-    except: ["test*"],
+    except: ["test*", "IERC20.sol"],
   },
   gasReporter: {
     enabled: !!process.env.REPORT_GAS,
